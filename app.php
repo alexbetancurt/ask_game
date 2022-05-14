@@ -119,12 +119,6 @@ $pregunta = new Pregunta();
 
 function comprobar1() {
 
-    var link = document.getElementById('divpregunta5');
-    link.style.display = 'none';
-
-    var link = document.getElementById('divpregunta5');
-    link.style.display = 'none';
-
 }
 
  
