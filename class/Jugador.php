@@ -4,7 +4,7 @@ class Jugador{
 
 //Atributos 
 private string $id;
-private string $nombre;
+public string $nombre;
 private int $puntuacion = 0;
 
 
