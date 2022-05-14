@@ -19,101 +19,59 @@ $pregunta = new Pregunta();
 
 <?php
 
-    $pregunta->obtener_pregunta_1();
+    $pregunta->obtener_pregunta(1);
 
-    echo ("<div id='divpregunta1'>");
-    echo("<h2>Pregunta Nivel 1</h2>");
-    echo("<h3>" . $pregunta->enunciado . "</h3>" );
-    echo("<p>Opción 1: " .$pregunta->opcion1 . "</p>" );
-    echo("<p>Opción 2: " .$pregunta->opcion2 . "</p>" );
-    echo("<p>Opción 3: " .$pregunta->opcion3 . "</p>" );
-    echo("<p>Opción 4: " .$pregunta->opcion4 . "</p>" );
-    echo ('<form action="app.php" method="post">
-    1 <input type="radio" name="opcion" value="1"> |  
-    2 <input type="radio" name="opcion" value="2"> |  
-    3 <input type="radio" name="opcion" value="3"> |  
-    4 <input type="radio" name="opcion" value="4"> |  
-    <input type="button" value="Enviar" onclick="comprobar1()">
-    </form>');
-    echo ("</div>");
+    $enunciado1 = $pregunta->enunciado;
+    $p1_opcion1 =$pregunta->opcion1;
+    $p1_opcion2 =$pregunta->opcion2;
+    $p1_opcion3 =$pregunta->opcion3;
+    $p1_opcion4 =$pregunta->opcion4;
+    $r1 = $pregunta->respuesta;
 
-    $pregunta->obtener_pregunta_2();
+    $pregunta->obtener_pregunta(2);
 
-    echo ("<div id='divpregunta2'>");
-    echo("<h2>Pregunta Nivel 2</h2>");
-    echo("<h3>" . $pregunta->enunciado . "</h3>" );
-    echo("<p>Opción 1: " .$pregunta->opcion1 . "</p>" );
-    echo("<p>Opción 2: " .$pregunta->opcion2 . "</p>" );
-    echo("<p>Opción 3: " .$pregunta->opcion3 . "</p>" );
-    echo("<p>Opción 4: " .$pregunta->opcion4 . "</p>" );
-    echo ('<form action="app.php" method="post">
-    1 <input type="radio" name="opcion" value="1"> |  
-    2 <input type="radio" name="opcion" value="2"> |  
-    3 <input type="radio" name="opcion" value="3"> |  
-    4 <input type="radio" name="opcion" value="4"> |  
-    <input type="button" value="Enviar" onclick="comprobar()">
-    </form>');
-    echo ("</div>");
+    $enunciado2 = $pregunta->enunciado;
+    $p2_opcion1 =$pregunta->opcion1;
+    $p2_opcion2 =$pregunta->opcion2;
+    $p2_opcion3 =$pregunta->opcion3;
+    $p2_opcion4 =$pregunta->opcion4;
+    $r2 = $pregunta->respuesta;
 
-    $pregunta->obtener_pregunta_3();
+    $pregunta->obtener_pregunta(3);
 
-    echo ("<div id='divpregunta3'>");
-    echo("<h2>Pregunta Nivel 3</h2>");
-    echo("<h3>" . $pregunta->enunciado . "</h3>" );
-    echo("<p>Opción 1: " .$pregunta->opcion1 . "</p>" );
-    echo("<p>Opción 2: " .$pregunta->opcion2 . "</p>" );
-    echo("<p>Opción 3: " .$pregunta->opcion3 . "</p>" );
-    echo("<p>Opción 4: " .$pregunta->opcion4 . "</p>" );
-    echo ('<form action="app.php" method="post">
-    1 <input type="radio" name="opcion" value="1"> |  
-    2 <input type="radio" name="opcion" value="2"> |  
-    3 <input type="radio" name="opcion" value="3"> |  
-    4 <input type="radio" name="opcion" value="4"> |  
-    <input type="button" value="Enviar" onclick="comprobar()">
-    </form>');
-    echo ("</div>");
+    $enunciado3 = $pregunta->enunciado;
+    $p3_opcion1 =$pregunta->opcion1;
+    $p3_opcion2 =$pregunta->opcion2;
+    $p3_opcion3 =$pregunta->opcion3;
+    $p3_opcion4 =$pregunta->opcion4;
+    $r3 = $pregunta->respuesta;
 
-    $pregunta->obtener_pregunta_4();
+    $pregunta->obtener_pregunta(4);
 
-    echo ("<div id='divpregunta4'>");
-    echo("<h2>Pregunta Nivel 4</h2>");
-    echo("<h3>" . $pregunta->enunciado . "</h3>" );
-    echo("<p>Opción 1: " .$pregunta->opcion1 . "</p>" );
-    echo("<p>Opción 2: " .$pregunta->opcion2 . "</p>" );
-    echo("<p>Opción 3: " .$pregunta->opcion3 . "</p>" );
-    echo("<p>Opción 4: " .$pregunta->opcion4 . "</p>" );
-    echo ('<form action="app.php" method="post">
-    1 <input type="radio" name="opcion" value="1"> |  
-    2 <input type="radio" name="opcion" value="2"> |  
-    3 <input type="radio" name="opcion" value="3"> |  
-    4 <input type="radio" name="opcion" value="4"> |  
-    <input type="button" value="Enviar" onclick="comprobar()">
-    </form>');
-    echo ("</div>");
+    $enunciado4 = $pregunta->enunciado;
+    $p4_opcion1 =$pregunta->opcion1;
+    $p4_opcion2 =$pregunta->opcion2;
+    $p4_opcion3 =$pregunta->opcion3;
+    $p4_opcion4 =$pregunta->opcion4;
+    $r4 = $pregunta->respuesta;
 
-    $pregunta->obtener_pregunta_5();
+    $pregunta->obtener_pregunta(5);
 
-    echo ("<div id='divpregunta5'>");
-    echo("<h2>Pregunta Nivel 5</h2>");
-    echo("<h3>" . $pregunta->enunciado . "</h3>" );
-    echo("<p>Opción 1: " .$pregunta->opcion1 . "</p>" );
-    echo("<p>Opción 2: " .$pregunta->opcion2 . "</p>" );
-    echo("<p>Opción 3: " .$pregunta->opcion3 . "</p>" );
-    echo("<p>Opción 4: " .$pregunta->opcion4 . "</p>" );
-    echo ('<form action="app.php" method="post">
-    1 <input type="radio" name="opcion" value="1"> |  
-    2 <input type="radio" name="opcion" value="2"> |  
-    3 <input type="radio" name="opcion" value="3"> |  
-    4 <input type="radio" name="opcion" value="4"> |  
-    <input type="button" value="Enviar" onclick="comprobar()">
-    </form>');
-    echo ("</div>");
-
+    $enunciado5 = $pregunta->enunciado;
+    $p5_opcion1 =$pregunta->opcion1;
+    $p5_opcion2 =$pregunta->opcion2;
+    $p5_opcion3 =$pregunta->opcion3;
+    $p5_opcion4 =$pregunta->opcion4;
+    $r5 = $pregunta->respuesta;
 ?>
 
 <form id="quiz-form">
         <label>
-            <h2>Espacio para el enunciado</h2> <br>
+            <h2 id="demo">Espacio para el enunciado</h2>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            <p id="p4"></p>
                 1 <input type="radio" name="opcion" value="1"> |  
                 2 <input type="radio" name="opcion" value="2"> |  
                 3 <input type="radio" name="opcion" value="3"> |  
@@ -124,24 +82,49 @@ $pregunta = new Pregunta();
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+    //   CARGA AL INICIAR
+    //   
+	$(document).ready(function()
+		{
+            document.getElementById("demo").innerHTML = '<?php echo $enunciado1 ?>';
+            document.getElementById("p1").innerHTML = '<?php echo $p1_opcion1 ?>';
+            document.getElementById("p2").innerHTML = '<?php echo $p1_opcion2 ?>';
+            document.getElementById("p3").innerHTML = '<?php echo $p1_opcion3 ?>';
+            document.getElementById("p4").innerHTML = '<?php echo $p1_opcion4 ?>';
+
+            var $nivel = 1;
+        });
+    </script>
+
     <script>
     
-    // When the user submits the form,
-    //   Check what answer they picked
-    //   And tell them if they're correct
-
-    // submit
+    //   COMPRUEBA SI ES CORRECTO O INCORRECTO
+    //   submit
     $("#quiz-form").on("submit", function(event) {
         event.preventDefault();
 
         var $opcionseleccionada = $("input:radio[name=opcion]:checked").val();
-        var $respuesta;
+        
+        var respuestacorrecta = '<?php echo $r1 ?>';
 
-        if($opcionseleccionada == $respuesta){
+        if(respuestacorrecta === $opcionseleccionada){
 
+            alert ("Es Correcto");
+
+            document.getElementById("demo").innerHTML = '<?php echo $enunciado2 ?>';
+            document.getElementById("p1").innerHTML = '<?php echo $p2_opcion1 ?>';
+            document.getElementById("p2").innerHTML = '<?php echo $p2_opcion2 ?>';
+            document.getElementById("p3").innerHTML = '<?php echo $p2_opcion3 ?>';
+            document.getElementById("p4").innerHTML = '<?php echo $p2_opcion4 ?>';
+
+            $nivel = $nivel + 1; 
+
+        }else{
+            alert ("Es Incorrecto");  
         }
-
-        alert ($opcionseleccionada);
         
     });
     </script>
