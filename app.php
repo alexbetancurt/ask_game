@@ -111,19 +111,40 @@ $pregunta = new Pregunta();
 
 ?>
 
+<form id="quiz-form">
+        <label>
+            <h2>Espacio para el enunciado</h2> <br>
+                1 <input type="radio" name="opcion" value="1"> |  
+                2 <input type="radio" name="opcion" value="2"> |  
+                3 <input type="radio" name="opcion" value="3"> |  
+                4 <input type="radio" name="opcion" value="4"> |  
+        </label> <br>
+        <button type="submit">Check Answer</button>
+    </form>
 
-<script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+    
+    // When the user submits the form,
+    //   Check what answer they picked
+    //   And tell them if they're correct
 
+    // submit
+    $("#quiz-form").on("submit", function(event) {
+        event.preventDefault();
 
+        var $opcionseleccionada = $("input:radio[name=opcion]:checked").val();
+        var $respuesta;
 
-function comprobar1() {
+        if($opcionseleccionada == $respuesta){
 
-}
+        }
 
- 
-
-</script>
+        alert ($opcionseleccionada);
+        
+    });
+    </script>
 
 
 </body>
