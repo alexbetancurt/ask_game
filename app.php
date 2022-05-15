@@ -21,21 +21,21 @@ $pregunta = new Pregunta();
 
     $pregunta->obtener_pregunta(1);
 
-    $enunciado1 = $pregunta->enunciado;
-    $p1_opcion1 =$pregunta->opcion1;
-    $p1_opcion2 =$pregunta->opcion2;
-    $p1_opcion3 =$pregunta->opcion3;
-    $p1_opcion4 =$pregunta->opcion4;
-    $r1 = $pregunta->respuesta;
+    $enunciado[1] = $pregunta->enunciado;
+    $opcion1[1] =$pregunta->opcion1;
+    $opcion2[1] =$pregunta->opcion2;
+    $opcion3[1] =$pregunta->opcion3;
+    $opcion4[1] =$pregunta->opcion4;
+    $r[1] = $pregunta->respuesta;
 
     $pregunta->obtener_pregunta(2);
 
-    $enunciado2 = $pregunta->enunciado;
-    $p2_opcion1 =$pregunta->opcion1;
-    $p2_opcion2 =$pregunta->opcion2;
-    $p2_opcion3 =$pregunta->opcion3;
-    $p2_opcion4 =$pregunta->opcion4;
-    $r2 = $pregunta->respuesta;
+    $enunciado[2] = $pregunta->enunciado;
+    $opcion1[2] =$pregunta->opcion1;
+    $opcion2[2] =$pregunta->opcion2;
+    $opcion3[2] =$pregunta->opcion3;
+    $opcion4[2] =$pregunta->opcion4;
+    $r[2] = $pregunta->respuesta;
 
     $pregunta->obtener_pregunta(3);
 
@@ -89,11 +89,11 @@ $pregunta = new Pregunta();
     //   
 	$(document).ready(function()
 		{
-            document.getElementById("demo").innerHTML = '<?php echo $enunciado1 ?>';
-            document.getElementById("p1").innerHTML = '<?php echo $p1_opcion1 ?>';
-            document.getElementById("p2").innerHTML = '<?php echo $p1_opcion2 ?>';
-            document.getElementById("p3").innerHTML = '<?php echo $p1_opcion3 ?>';
-            document.getElementById("p4").innerHTML = '<?php echo $p1_opcion4 ?>';
+            document.getElementById("demo").innerHTML = '<?php echo $enunciado[1] ?>';
+            document.getElementById("p1").innerHTML = '<?php echo $opcion1[1] ?>';
+            document.getElementById("p2").innerHTML = '<?php echo $opcion2[1] ?>';
+            document.getElementById("p3").innerHTML = '<?php echo $opcion3[1] ?>';
+            document.getElementById("p4").innerHTML = '<?php echo $opcion4[1] ?>';
 
             var $nivel = 1;
         });
@@ -108,17 +108,17 @@ $pregunta = new Pregunta();
 
         var $opcionseleccionada = $("input:radio[name=opcion]:checked").val();
         
-        var respuestacorrecta = '<?php echo $r1 ?>';
+        var respuestacorrecta = "<?php echo $r[1] ?>";
 
         if(respuestacorrecta === $opcionseleccionada){
 
             alert ("Es Correcto");
 
-            document.getElementById("demo").innerHTML = '<?php echo $enunciado2 ?>';
-            document.getElementById("p1").innerHTML = '<?php echo $p2_opcion1 ?>';
-            document.getElementById("p2").innerHTML = '<?php echo $p2_opcion2 ?>';
-            document.getElementById("p3").innerHTML = '<?php echo $p2_opcion3 ?>';
-            document.getElementById("p4").innerHTML = '<?php echo $p2_opcion4 ?>';
+            document.getElementById("demo").innerHTML = '<?php echo  $enunciado[2] ?>';
+            document.getElementById("p1").innerHTML = '<?php echo $opcion1[2] ?>';
+            document.getElementById("p2").innerHTML = '<?php echo $opcion2[2] ?>';
+            document.getElementById("p3").innerHTML = '<?php echo $opcion3[2] ?>';
+            document.getElementById("p4").innerHTML = '<?php echo $opcion4[2] ?>';
 
             $nivel = $nivel + 1; 
 
